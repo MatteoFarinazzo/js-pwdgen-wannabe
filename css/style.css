@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Nunito', sans-serif;
 }
 
 footer {
@@ -17,3 +19,7 @@ footer {
     width:50px;
 }
 
+.butt-hov:hover{
+    transform: scale(105%);
+
+}

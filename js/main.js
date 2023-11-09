@@ -28,7 +28,7 @@ choiceNumber2 = parseInt(choiceNumber2);
 // Elaborazione delle statistiche
  firstNumberDividedForTheSecond = choiceNumber1 / choiceNumber2;
 
- 
+
 // Generatore di numeri
  min = 100;
  max = 9999;
@@ -56,23 +56,40 @@ Password 3: ${name}${surname}${color}${randomNumber}
 console.log(passwordInfo);
 }
 
+// funzioni per generare password
+
 function getPassword1(){
 
-    document.getElementById("password_1").innerHTML = name + surname + color + 21;
+    document.getElementById("password").innerHTML = name + surname + color + 21;
     
 }
 
 function getPassword2(){
-    document.getElementById("password_1").innerHTML = name + surname + color + firstNumberDividedForTheSecond;
+    document.getElementById("password").innerHTML = name + surname + color + firstNumberDividedForTheSecond;
     
 }
 
 function getPassword3(){
-    document.getElementById("password_1").innerHTML = name + surname + color + randomNumber;
+    document.getElementById("password").innerHTML = name + surname + color + randomNumber;
 
 }
 
-// Qui posso poi compilare l'eventuale pagina HTML prodisposta.
-// document.getElementById("user_age").innerHTML = age;
+/* tasto per copiare password
 
+function myFunction() {
+    // Get the text field
+    let copyText = document.getElementById("password");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+    
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }
+
+  */
 
