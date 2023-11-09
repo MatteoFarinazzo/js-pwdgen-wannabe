@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 40px;
+}
+
+
+
 .width-log-foot{
     width:50px;
 }
+

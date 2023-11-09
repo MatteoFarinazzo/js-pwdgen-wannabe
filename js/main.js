@@ -1,29 +1,43 @@
 
+//variabili
+
+let name;
+let surname;
+let color;
+let choiceNumber1;
+let choiceNumber2;
+
+let firstNumberDividedForTheSecond;
+let randomNumber;
+
+
 // Chiedere le informazioni all'utente
 function getData(){
-let name = prompt("Inserisci il tuo nome");
-let surname = prompt("Inserisci il tuo cognome");
-let color = prompt("Inserisci il tuo colore preferito");
-let choiceNumber1 = prompt("Scegli un numero");
-let choiceNumber2 = prompt("Scegli un altro numero");
+ name = prompt("Inserisci il tuo nome");
+ surname = prompt("Inserisci il tuo cognome");
+ color = prompt("Inserisci il tuo colore preferito");
+ choiceNumber1 = prompt("Scegli un numero");
+ choiceNumber2 = prompt("Scegli un altro numero");
 
 
 // Converto le variabili dei numeri sottoforma di stringa in un NUMERO
 choiceNumber1 = parseInt(choiceNumber1);
 choiceNumber2 = parseInt(choiceNumber2);
 
+
 // Elaborazione delle statistiche
-let firstNumberDividedForTheSecond = choiceNumber1 / choiceNumber2;
+ firstNumberDividedForTheSecond = choiceNumber1 / choiceNumber2;
 
+ 
 // Generatore di numeri
-let min = 100;
-let max = 9999;
+ min = 100;
+ max = 9999;
 
-let randomNumber = Math.floor((Math.random() * (max - min)) + min);
+ randomNumber = Math.floor((Math.random() * (max - min)) + min);
 
 
 // Compliazione della console
-let passwordInfo = `
+ passwordInfo = `
 ------------------
 
 > Informazioni:
