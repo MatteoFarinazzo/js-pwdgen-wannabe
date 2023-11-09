@@ -1,10 +1,12 @@
 
 // Chiedere le informazioni all'utente
+function getData(){
 let name = prompt("Inserisci il tuo nome");
 let surname = prompt("Inserisci il tuo cognome");
 let color = prompt("Inserisci il tuo colore preferito");
 let choiceNumber1 = prompt("Scegli un numero");
 let choiceNumber2 = prompt("Scegli un altro numero");
+
 
 // Converto le variabili dei numeri sottoforma di stringa in un NUMERO
 choiceNumber1 = parseInt(choiceNumber1);
@@ -38,6 +40,23 @@ Password 3: ${name}${surname}${color}${randomNumber}
 `;
 
 console.log(passwordInfo);
+}
+
+function getPassword1(){
+
+    document.getElementById("password_1").innerHTML = name + surname + color + 21;
+    
+}
+
+function getPassword2(){
+    document.getElementById("password_1").innerHTML = name + surname + color + firstNumberDividedForTheSecond;
+    
+}
+
+function getPassword3(){
+    document.getElementById("password_1").innerHTML = name + surname + color + randomNumber;
+
+}
 
 // Qui posso poi compilare l'eventuale pagina HTML prodisposta.
 // document.getElementById("user_age").innerHTML = age;
